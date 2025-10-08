@@ -1,0 +1,156 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        
+        .body-login {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(images/background2.jpg);
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        overflow: hidden;
+        }
+
+        
+        body-::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+        opacity: 0.6;
+        }
+
+        body::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: url("https://svgshare.com/i/17eD.svg") repeat-x;
+        background-size: cover;
+        z-index: 0;
+        }
+
+        .login-box {
+        position: relative;
+        z-index: 1;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        padding: 40px;
+        width: 350px;
+        text-align: center;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .login-box h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        }
+
+        .login-box .input-box {
+        position: relative;
+        margin-bottom: 30px;
+        }
+
+        .login-box .input-box input {
+        width: 100%;
+        padding: 13px 1px 13px 13px;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        font-size: 14px;
+        }
+
+        .login-box .input-box input::placeholder {
+        color: #ddd;
+        }
+
+        .login-box .input-box i {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        }
+
+        .options {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        margin-bottom: 20px;
+        }
+
+        .options a {
+        color: #fff;
+        text-decoration: none;
+        }
+
+        .login-box button {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 25px;
+        background: white;
+        color: #6a42c2;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+        }
+
+        .login-box button:hover {
+        background: #ddd;
+        }
+
+        .register {
+        margin-top: 15px;
+        font-size: 13px;
+        }
+
+        .register a {
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        }
+    </style>
+    </head>
+    <body class="body-login">
+        <form action="dashboard.html" method="post">
+            <div class="login-box">
+                <h2>Login</h2>
+                    <div class="input-box">
+                        <input type="text" placeholder="Username" required>
+                            <i>👤</i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Password" required>
+                        <i>🔒</i>
+                    </div>
+                    <div class="options">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button>Login</button>
+                    <div class="register">Don’t have an account? <a href="#">Register</a>
+                    </div>
+        </form>
+    
+    </div>
+    </body>
+    </html>
